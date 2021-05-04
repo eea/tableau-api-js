@@ -16,8 +16,21 @@
     "type": "git",
     "url": "git@github.com:eea/tableau-api-js.git"
   },
-  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.2",
+    "babel-preset-es2015-riot": "^1.0.3",
+    "del-cli": "^0.2.0",
+    "glob": "^7.0.3",
+    "jasmine": "^2.4.1",
+    "uglify-js": "^2.6.2"
+  },
   "scripts": {
-    "release": "release-it"
+    "clean": "del dist",
+    "release": "release-it",
+    "preuglify": "mkdir -p dist",
+    "uglify": "uglifyjs -cmo dist/tableau-api-js.min.js dist/tableau-api-js.js",
+    "watch": "babel --watch src -d dist",
+    "babel": "babel src -d dist"
   }
 }
