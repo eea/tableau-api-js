@@ -1,11 +1,12 @@
 # tableau-api-js
+
 Package with latest tableau api scripts
 
 ## How to use
 
 ```JSON
   "dependencies": {
-    "tableau-api-js": "github:eea/tableau-api-js#1.0.0"
+    "tableau-api-js": "github:eea/tableau-api-js#1.1.0"
   }
 ```
 
