@@ -3,6 +3,12 @@ Package with latest tableau api scripts
 
 ## How to use
 
+```JSON
+  "dependencies": {
+    "tableau-api-js": "github:eea/tableau-api-js#1.0.0"
+  }
+```
+
 ```javascript
 import { tableauVersions, getLatestTableauVersion } from 'tableau-api-js';
 import loadTableauApi from 'tableau-api-js';
@@ -23,4 +29,4 @@ loadTableauApi(getLatestTableauVersion())
   })
 ```
 
-This is intended to be used with git@github.com:eea/volto-tableau.git
+This is intended to be used with [Volto tableau](https://github.com/eea/volto-tableau)
