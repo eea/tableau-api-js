@@ -1,6 +1,6 @@
 {
   "name": "tableau-api-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Package with latest tableau api scripts",
   "main": "src/index.js",
   "author": "European Environment Agency: IDM2 A-Team",
