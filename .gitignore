@@ -6,10 +6,8 @@ npm-debug.log*
 .DS_Store
 *.swp
 yarn-error.log
-
 node_modules
 build
-dist
 screenshots
 cypress/videos
 cypress/reports
