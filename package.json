@@ -2,7 +2,7 @@
   "name": "tableau-api-js",
   "version": "1.0.2",
   "description": "Package with latest tableau api scripts",
-  "main": "src/index.js",
+  "main": "./dist/tableau-api-js.min.js",
   "author": "European Environment Agency: IDM2 A-Team",
   "license": "MIT",
   "homepage": "https://github.com/eea/tableau-api-js",
