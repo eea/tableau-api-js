@@ -11,17 +11,21 @@ pipeline {
 
    stages {
      stage('Install') {
-       script{
-         checkout scm                         
-         tool 'NodeJS12'
-         tool 'SonarQubeScanner'
-         sh "yarn install"
+       steps {
+         script{
+           checkout scm                         
+           tool 'NodeJS12'
+           tool 'SonarQubeScanner'
+           sh "yarn install"
+         }
        }
      }
      stage('Test') {
-       script {
-         sh "yarn add -W --dev jest-junit "
-         sh "yarn test --watchAll=false --reporters=default --reporters=jest-junit --collectCoverage --coverageReporters lcov cobertura text"
+       steps {
+         script {
+           sh "yarn add -W --dev jest-junit "
+           sh "yarn test --watchAll=false --reporters=default --reporters=jest-junit --collectCoverage --coverageReporters lcov cobertura text"
+         }
        }
      }
      
