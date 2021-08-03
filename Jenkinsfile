@@ -7,7 +7,7 @@ pipeline {
         NAMESPACE = "@eeacms"
         SONARQUBE_TAGS = "volto.eea.europa.eu"
         DEPENDENCIES = ""
-    }
+  }
 
    stages {
      stage('Install') {
@@ -41,7 +41,6 @@ pipeline {
              }
            }
          }
-      }
      }
 
     stage('Pull Request') {
