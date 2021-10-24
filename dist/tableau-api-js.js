@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.getLatestTableauVersion = exports.tableauVersions = void 0;
+exports.tableauVersions = exports.getLatestTableauVersion = exports.default = void 0;
 var TIMEOUT = 2000;
 var FREQUENCY = 10;
 var tableauVersions = ['2.8.0', '2.7.0', '2.6.0', '2.5.0', '2.4.0', '2.3.0', '2.2.2', '2.1.2', '2.0.3'];
