@@ -14,7 +14,7 @@ export const tableauVersions = [
 ];
 
 export const getLatestTableauVersion = () => {
-  return tableauVersions[tableauVersions.length - 1];
+  return tableauVersions[0];
 };
 
 export default (version) => {
@@ -43,4 +43,3 @@ export default (version) => {
     }, FREQUENCY);
   });
 };
-

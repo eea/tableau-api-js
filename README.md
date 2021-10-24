@@ -24,7 +24,7 @@ loadTableauApi(getLatestTableauVersion())
     // or you can set a global variable from loadTableauApi response
     tableau = response.tableau;
     message = response.message;
-  });
+  })
   .catch((error) => {
     console.log(error.message);
   })
